@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Tarefas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Lista de Tarefas</h1>
+<div class="small">Salvo localmente no navegador</div>
+</header>
+
+<div class="card">
+<div class="add-row">
+<input id="inputTask" placeholder="Adicione uma nova tarefa e pressione Enter" />
+<button id="btnAdd" class="btn">Adicionar</button>
+</div>
+
+<div class="controls">
+<div id="filterAll" class="chip active">Todas</div>
+<div id="filterActive" class="chip">Ativas</div>
+<div id="filterCompleted" class="chip">Concluídas</div>
+
+<div class="search">
+<input id="search" placeholder="Pesquisar" />
+</div>
+</div>
+
+<div id="list" class="list"></div>
+<div class="small" id="summary"></div>
+</div>
+</div>
+
+<div id="modalBack" class="modal-back">
+<div class="modal">
+<h3>Editar tarefa</h3>
+<input id="editInput" />
+<div class="modal-buttons">
+<button id="modalCancel" class="icon-btn">Cancelar</button>
+<button id="modalSave" class="btn">Salvar</button>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
